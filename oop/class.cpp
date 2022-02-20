@@ -15,6 +15,7 @@ class student{
         cout <<gender <<endl;
 
     }
+    
 
 };
 
