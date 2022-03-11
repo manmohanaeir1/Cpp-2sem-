@@ -1,10 +1,2 @@
- faculty: ";
-    cin >> faculty; 
 
-    }
-};
-int main()
-{
-    print intro;// object
-    
-    
+    if (i==0 && j==0 &
