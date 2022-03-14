@@ -19,7 +19,7 @@ int main(){
     items b;
     a->getData();
     b.showData();
-    cout<<"Items details";
+    cout<<"Items Address";
     cout <<"First iteams "<<endl;
     a->showData();
     cout<< "Second iteams" <<endl;
