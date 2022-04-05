@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 class student{
+    char cname[50];
     int roll;
     char name[40];
     public:
@@ -9,13 +10,23 @@ class student{
 };
 
 void student::getData()
- {
-        cout<<"Enter  roll and name of the students";
+ {      cout<<"Enter collage name: "<<endl;
+        cin>>cname;
+        cout<<"Enter  roll and name of the students =" <<endl;
         cin >>roll>>name;
     }
 void student::showinfo()
     {
-        cout<<"Roll = " <<roll <<"| Name = " <<name;
+        for (int  i = 0; i <=100; i++)
+        {
+            cout<<"|";
+            
+        }cout<<endl;
+        
+        cout<<"Collage name = " <<cname <<endl
+            <<"Roll = " <<roll  <<endl
+            <<"Name = " <<name;
+            cout<<endl;
     }
 
 class marks:public student
@@ -43,15 +54,28 @@ void marks::getMarks()
         cin>>MP;
         cout <<"Enter marks of Stat";
         cin>>Stat;
+        cout<<endl;
 
     }
 void marks::showMarks()
 {
+    for (int  i = 0; i <=30; i++)
+        {
+            cout<<"-";
+            
+        }cout<<endl;
+
         cout<<"Math = "<<math <<endl
             <<"Ds = "<<Ds <<endl
             <<"OOPs = "<<OOPs <<endl
             <<"MP = "<<MP <<endl
             <<"Stat = "<<Stat <<endl;
+
+     for (int  i = 0; i <=30; i++)
+        {
+            cout<<"-";
+            
+        }cout<<endl;
     }
 
 void marks::totalMarks()
@@ -76,10 +100,33 @@ void marks::grade(){
     else if(per>=80&&per<=90)
     {
         cout<<"Grade = A";
-    }else{
-        cout<<"Grade = F";
     }
+    else if(per>=70&&per<=80)
+    {
+        cout<<"Grade = B+";
+    }
+    else if(per>=70&&per<=60)
+    {
+        cout<<"Grade = B";
+    }
+    else if(per>=60&&per<=50)
+    {
+        cout<<"Grade = C+";
+    }
+    else if(per>=50&&per<=40)
+    {
+        cout<<"Grade = C";
+    }else if(per>=40&&per<=35)
+    {
+        cout<<"Grade = C";
+    }
+    cout<<endl;
     
+    for (int  i = 0; i <=100; i++)
+        {
+            cout<<"|";
+            
+        }cout<<endl;
 }
 
 int main(){
