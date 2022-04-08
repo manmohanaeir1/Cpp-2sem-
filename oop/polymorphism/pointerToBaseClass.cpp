@@ -31,7 +31,7 @@ int main()
     pt->setData(5,6);
     sq.find_peri();
     return 0;
-    
 
+ 
     
 }
